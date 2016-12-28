@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Math Beginner</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_prizes">My Prizes</string>
+
+    <string name="digit_text">Number of digits</string>
+    <string name="operator_text">Operation</string>
+    <string name="timer_enabled_text">Timer Enabled</string>
+    <string name="title_activity_questions">Math Beginner</string>
+
+    <string name="title_activity_results">Results</string>
+    <string name="score_label">Your Score: </string>
+
+    <string name="correct_text">Correct!</string>
+    <string name="wrong_text">Wrong!</string>
+    <string name="correct_answer_text">Correct Answer: </string>
+
+    <string name="title_activity_prize">My Prizes</string>
+
+    <string name="time_left_text">Time Left: </string>
+    <string name="times_up_text">Time\'s up!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full Name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered? Log in.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>@string/app_name
+    <string name="name">Fullname</string>
+        <string name="title_activity_register">Register</string>
+</resources>

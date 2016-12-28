@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="6dp"
+        android:weightSum="3"
+        android:transitionGroup="false">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Digit "
+            android:id="@+id/RdComplex1"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Digits"
+            android:layout_weight="1"
+            android:checked="true"
+            android:id="@+id/RdComplex2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Digits"
+            android:id="@+id/RdComplex3"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Operation:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="14dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup2"
+        android:weightSum="3"
+        android:layout_marginTop="6dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"
+            android:id="@+id/RdPlus"
+            android:checked="true"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/RdMinus"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:id="@+id/RdTimes"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Time"
+        android:id="@+id/EnableTime"
+        android:layout_below="@+id/radioGroup2"
+        android:checked="false"
+        android:layout_marginTop="18dp"
+        android:textSize="22sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/Linearb"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/EnableTime">
+
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_start"
+            android:id="@+id/BtnStart"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:background="#25984b"
+            android:textColor="#fff5f3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/BtnPrizes"
+            android:text="@string/btn_prizes"
+            android:layout_marginLeft="2dp"
+            android:textColor="#fff5f3"
+            android:background="#25984b"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Complexity:"
+        android:id="@+id/textView"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

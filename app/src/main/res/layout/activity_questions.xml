@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:keepScreenOn="true"
+    tools:context="edu.depaul.csc472.mathbeginner.QuestionsActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer_text"
+        android:layout_weight="0.1"
+        android:text="@string/time_left_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="20pt"
+        android:layout_weight="0.9"
+        android:id="@+id/question_text"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/choice1"
+                android:onClick="choicesOnClick"
+                android:background="#25984b"
+                android:textColor="#f6f3ff"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/choice2"
+                android:onClick="choicesOnClick"
+                android:background="#25984b"
+                android:textColor="#f6f3ff"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/choice3"
+                android:onClick="choicesOnClick"
+                android:background="#25984b"
+                android:textColor="#f6f3ff"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/choice4"
+                android:onClick="choicesOnClick"
+                android:background="#25984b"
+                android:textColor="#f6f3ff"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
